@@ -68,7 +68,7 @@ const ContactCard = (props) => {
                     height="48px"
                     width="200px"
                     variant="ghost"
-                    _hover={{ border: '2px solid #1C6FEB' }}
+                    _hover={{ color: '#0080FE' }}
                     leftIcon={<MdPhone color="white" size="20px" />}
                     color={'white'}
                   >
@@ -80,7 +80,7 @@ const ContactCard = (props) => {
                     height="48px"
                     width="200px"
                     variant="ghost"
-                    _hover={{ border: '2px solid #1C6FEB' }}
+                    _hover={{ color: '#0080FE' }}
                     leftIcon={<MdPhone color="white" size="20px" />}
                   >
                     <a href={`tel:${props.data.phoneNumber2}`}>{props.data.phoneNumber2}</a>
@@ -92,7 +92,7 @@ const ContactCard = (props) => {
                   height="48px"
                   width="200px"
                   variant="ghost"
-                  _hover={{ border: '2px solid #1C6FEB' }}
+                  _hover={{ color: '#0080FE' }}
                   leftIcon={<MdEmail color="white" size="20px" />}
                 >
                   <a href={`mailto:${props.data.email}`}>{props.data.email}</a>
@@ -101,9 +101,20 @@ const ContactCard = (props) => {
                   color={'white'}
                   size="md"
                   height="48px"
-                  width="200px"
+                  width="100%"
                   variant="ghost"
-                  _hover={{ border: '2px solid #1C6FEB' }}
+                  _hover={{ color: '#0080FE' }}
+                  leftIcon={<MdEmail color="white" size="20px" />}
+                >
+                  <a href={`mailto:${props.data.email}`}>{props.data.email2}</a>
+                </Button>
+                <Button
+                  color={'white'}
+                  size="md"
+                  height="48px"
+                  width="full"
+                  variant="ghost"
+                  _hover={{ color: '#0080FE' }}
                   leftIcon={<MdLocationOn color="white" size="20px" />}>
                   {props.data.address}
                 </Button>

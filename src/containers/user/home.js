@@ -16,6 +16,7 @@ import SmoothCarousel from "../../components/header/Carousel/SmoothCarousel"
 import Newspaper from "./newspaper"
 import AllJobs from "./allJobs"
 import MainCarousel from '../../components/header/mainCarousel/mainCarousel';
+import OurTeam from './ourTeam';
 const baseUrl = process.env.REACT_APP_BASE_URL
 
 const Home = () => {
@@ -76,6 +77,7 @@ const Home = () => {
                 <Box >
                     <ImageParagraph2 />
                 </Box>
+                <OurTeam />
                 {/* OUR VALUABLE CLIENTS */}
                 <Box >
                     <BlogArticleCard />
